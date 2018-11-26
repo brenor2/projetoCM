@@ -139,9 +139,9 @@ class OkumuraHataModel(object):
        self.checkFreq = checkFreq
 
     def pathloss(self,dist):
-        if (self.checkFreq):
-            if (self.freq<=500 or self.freq>=1500):
-                raise ValueError('The frequency range for Okumura-Hata Model is 500MHz-1500Mhz')
+        # if (self.checkFreq):
+            # if (self.freq<=500 or self.freq>=1500):
+            #     raise ValueError('The frequency range for Okumura-Hata Model is 500MHz-1500Mhz')
         hm,hb,f = self.rxH,self.txH,self.freq
         # a Calc
         if (f<=200 and self.cityKind==CityKind.Large):
